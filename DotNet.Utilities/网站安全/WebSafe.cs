@@ -1,16 +1,18 @@
 ﻿/*
  源码己托管:http://git.oschina.net/kuiyu/dotnetcodes
  */
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Web;
 using System.Text.RegularExpressions;
+
 namespace DotNet.Utilities
 {
     /// <summary>
-    /// 防止跨站脚本攻击
+    /// 防止跨站脚本攻击的代码
     /// </summary>
     public class WebSafe
     {
@@ -19,7 +21,6 @@ namespace DotNet.Utilities
         public static bool PostData()
         {
             bool result = false;
-
             for (int i = 0; i < HttpContext.Current.Request.Form.Count; i++)
             {
                 result = CheckData(HttpContext.Current.Request.Form[i].ToString());
