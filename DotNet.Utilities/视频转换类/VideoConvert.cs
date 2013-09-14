@@ -6,30 +6,7 @@ using System.Configuration;
 
 namespace DotNet.Utilities
 {
-    //if (this.fload.HasFile)
-    //{
-    //    string upFileName = HttpContext.Current.Server.MapPath("~/savefile") + "\\" + this.fload.PostedFile.FileName;
-    //    string saveName   = DateTime.Now.ToString("yyyyMMddHHmmssffff");
-    //    string playFile   = Server.MapPath(VideoConvert.savefile + saveName);
-    //    string imgFile    = Server.MapPath(VideoConvert.savefile + saveName);
 
-    //    VideoConvert pm = new VideoConvert();
-    //    string m_strExtension = VideoConvert.GetExtension(this.fload.PostedFile.FileName).ToLower();
-    //    if (m_strExtension == "flv")
-    //    {
-    //        System.IO.File.Copy(upFileName, playFile + ".flv");
-    //        pm.CatchImg(upFileName, imgFile);
-    //    }
-    //    string Extension = pm.CheckExtension(m_strExtension);
-    //    if (Extension == "ffmpeg")
-    //    {
-    //        pm.ChangeFilePhy(upFileName, playFile, imgFile);
-    //    }
-    //    else if (Extension == "mencoder")
-    //    {
-    //        pm.MChangeFilePhy(upFileName, playFile, imgFile);
-    //    }
-    //}
     public class VideoConvert : System.Web.UI.Page
     {
         public VideoConvert()
@@ -132,11 +109,12 @@ namespace DotNet.Utilities
         }
         #endregion
 
-        #region 生成Flv视频的缩略图
+        #region 生成Flv视频的缩略图       
         /// <summary>
         /// 生成Flv视频的缩略图
         /// </summary>
         /// <param name="vFileName">视频文件地址</param>
+        /// <returns>返回视频缩略图位置</returns>
         public string CatchImg(string vFileName)
         {
             if ((!System.IO.File.Exists(ffmpegtool)) || (!System.IO.File.Exists(HttpContext.Current.Server.MapPath(vFileName)))) return "";

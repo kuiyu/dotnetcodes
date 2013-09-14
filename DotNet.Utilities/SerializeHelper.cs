@@ -9,8 +9,6 @@ namespace DotNet.Utilities
     public class SerializeHelper
     {
         //System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
-
-
         public readonly static SerializeHelper Instance = new SerializeHelper();
 
         /// <summary>
