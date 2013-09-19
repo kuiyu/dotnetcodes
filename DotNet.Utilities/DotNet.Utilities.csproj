@@ -75,6 +75,7 @@
     <Compile Include="HttpHelper.cs" />
     <Compile Include="JSON操作\ConvertJson.cs" />
     <Compile Include="JS操作\JsHelper.cs" />
+    <Compile Include="PDFHelper.cs" />
     <Compile Include="SqlHelper.cs" />
     <Compile Include="XML操作类\XmlHelper.cs" />
     <Compile Include="XML操作类\XMLProcess.cs" />

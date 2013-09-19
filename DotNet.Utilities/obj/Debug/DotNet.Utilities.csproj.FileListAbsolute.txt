@@ -18,3 +18,8 @@ C:\Documents and Settings\Administrator\桌面\DotNetUtilities\DotNet.Utilities\
 C:\Documents and Settings\Administrator\桌面\DotNetUtilities\DotNet.Utilities\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\Administrator\桌面\DotNetUtilities\DotNet.Utilities\obj\Debug\DotNet.Utilities.dll
 C:\Documents and Settings\Administrator\桌面\DotNetUtilities\DotNet.Utilities\obj\Debug\DotNet.Utilities.pdb
+E:\source\dotnetcodes\DotNet.Utilities\bin\Debug\DotNet.Utilities.dll
+E:\source\dotnetcodes\DotNet.Utilities\bin\Debug\DotNet.Utilities.pdb
+E:\source\dotnetcodes\DotNet.Utilities\obj\Debug\DotNet.Utilities.csprojResolveAssemblyReference.cache
+E:\source\dotnetcodes\DotNet.Utilities\obj\Debug\DotNet.Utilities.dll
+E:\source\dotnetcodes\DotNet.Utilities\obj\Debug\DotNet.Utilities.pdb
