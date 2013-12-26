@@ -91,6 +91,7 @@
     <Compile Include="文件操作类\DirFile.cs" />
     <Compile Include="文件操作类\FileOperate.cs" />
     <Compile Include="文件操作类\INIFile.cs" />
+    <Compile Include="时间戳\TimeHelper.cs" />
     <Compile Include="条形码\BarCodeToHTML.cs" />
     <Compile Include="正则表达式\RegexHelper.cs" />
     <Compile Include="汉字转拼音\EcanConvertToCh.cs" />

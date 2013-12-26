@@ -33,7 +33,7 @@ namespace DotNet.Utilities
             string str = string.Empty;
             if (cookie != null)
             {
-                str = cookie.Value;
+                str =HttpUtility.UrlDecode(cookie.Value);
             }
             return str;
         }
