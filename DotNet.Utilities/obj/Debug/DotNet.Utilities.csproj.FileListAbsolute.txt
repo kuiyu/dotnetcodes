@@ -23,3 +23,7 @@ E:\source\dotnetcodes\DotNet.Utilities\bin\Debug\DotNet.Utilities.pdb
 E:\source\dotnetcodes\DotNet.Utilities\obj\Debug\DotNet.Utilities.csprojResolveAssemblyReference.cache
 E:\source\dotnetcodes\DotNet.Utilities\obj\Debug\DotNet.Utilities.dll
 E:\source\dotnetcodes\DotNet.Utilities\obj\Debug\DotNet.Utilities.pdb
+E:\work\DotNetCodes\DotNet.Utilities\bin\Debug\DotNet.Utilities.dll
+E:\work\DotNetCodes\DotNet.Utilities\bin\Debug\DotNet.Utilities.pdb
+E:\work\DotNetCodes\DotNet.Utilities\obj\Debug\DotNet.Utilities.dll
+E:\work\DotNetCodes\DotNet.Utilities\obj\Debug\DotNet.Utilities.pdb

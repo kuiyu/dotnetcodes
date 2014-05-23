@@ -114,6 +114,8 @@
     <Compile Include="视频转换类\VideoConvert.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="计划任务\IntervalTask.cs" />
+    <Compile Include="计划任务\TimerInfo.cs" />
     <Compile Include="配置文件操作类\ConfigHelper.cs" />
     <Compile Include="随机数类\BaseRandom.cs" />
     <Compile Include="随机数类\RandomHelper.cs" />
@@ -131,7 +133,10 @@
     <Compile Include="导出Excel\GridViewExport.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FTP操作类\edtFTPnet.dll" />
+    <Content Include="FTP操作类\FTP使用说明.txt" />
     <Content Include="网站安全\使用说明.txt" />
+    <Content Include="计划任务\计划任务使用说明.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
