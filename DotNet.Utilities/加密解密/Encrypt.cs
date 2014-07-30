@@ -57,21 +57,28 @@ namespace DotNet.Utilities
 			return objStreamReader.ReadToEnd();
 		}
 
+         
+
         /// <summary>
-        /// md5
+        /// 32位MD5加密
         /// </summary>
-        /// <param name="encypStr"></param>
+        /// <param name="strText">要加密字符串</param>
+        /// <param name="IsLower">是否以小写方式返回</param>
         /// <returns></returns>
-        public static string Md5(string encypStr)
+        public static string MD5Encrypt(string strText, bool IsLower)
         {
-            string retStr;
-            MD5CryptoServiceProvider m5 = new MD5CryptoServiceProvider();
-            byte[] inputBye;
-            byte[] outputBye;
-            inputBye = System.Text.Encoding.ASCII.GetBytes(encypStr);
-            outputBye = m5.ComputeHash(inputBye);
-            retStr = Convert.ToBase64String(outputBye);
-            return (retStr);
+            MD5 md5 = new MD5CryptoServiceProvider();
+            byte[] bytes = System.Text.Encoding.UTF8.GetBytes(strText);
+            bytes = md5.ComputeHash(bytes);
+            md5.Clear();
+
+            string ret = "";
+            for (int i = 0; i < bytes.Length; i++)
+            {
+                ret += Convert.ToString(bytes[i], 16).PadLeft(2, '0');
+            }
+
+            return ret.PadLeft(32, '0');
         }
 	}
 }
