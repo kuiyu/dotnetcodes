@@ -68,6 +68,10 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode, Version=1.0.2774.19990, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chart图形\Assistant.cs" />
@@ -79,6 +83,7 @@
     <Compile Include="SqlHelper.cs" />
     <Compile Include="XML操作类\XmlHelper.cs" />
     <Compile Include="XML操作类\XMLProcess.cs" />
+    <Compile Include="二维码操作类\QRcode.cs" />
     <Compile Include="加密解密\DESEncrypt.cs" />
     <Compile Include="加密解密\Encrypt.cs" />
     <Compile Include="加密解密\HashEncode.cs" />
@@ -138,6 +143,7 @@
     <Content Include="网站安全\使用说明.txt" />
     <Content Include="计划任务\计划任务使用说明.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

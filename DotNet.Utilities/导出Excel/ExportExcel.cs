@@ -43,7 +43,7 @@ namespace DotNet.Utilities
                 string style = "";
                 if (obj.Rows.Count > 0)
                 {
-                    style = @"<style> .text { mso-number-format:\@; } </script> ";
+                    style = @"<style> .text { mso-number-format:\@; } </style> ";
                 }
                 else
                 {
@@ -68,5 +68,37 @@ namespace DotNet.Utilities
             {
             }
         }
+
     }
 }
+
+
+
+/*实际应用的例子
+ if (list.Count > 0)
+                {
+ *                  //1.实例化
+                    xftwl.Infrastructure.ExportExcel ex = new Infrastructure.ExportExcel();
+
+ *                  //2.指定数据源
+                    GridView gv = new GridView();
+                    gv.DataSource = list;
+                    gv.DataBind();
+
+                    //3.设置导出的excel某列格式
+                    if(gv.Rows.Count>0)                     
+                    {
+                        for (int j = 0; j < gv.Rows.Count; j++)
+                        {
+                            //把每行第二列格式设为文本格式
+                            gv.Rows[j].Cells[1].Attributes.Add("style", "mso-number-format:'\\@'");
+                            //每行第三列格式：两位小数
+                            gv.Rows[j].Cells[2].Attributes.Add("style", "mso-number-format:'0\\.00'");
+                        }
+                    }                   
+
+                    ex.ExportData(gv);
+                }
+ 
+ 
+ */
