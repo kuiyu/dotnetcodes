@@ -47,6 +47,8 @@
 		}
 
 
+3.设置应用程序池超时时间
+闲置超时时间改为0
 
 	也可以参考托管在github的实例
 	https://github.com/b9chris/ASP.Net-Long-Running-Interval-Task
