@@ -32,3 +32,9 @@ G:\DotNetUntities\DotNet.Utilities\bin\Debug\DotNet.Utilities.pdb
 G:\DotNetUntities\DotNet.Utilities\obj\Debug\DotNet.Utilities.csprojResolveAssemblyReference.cache
 G:\DotNetUntities\DotNet.Utilities\obj\Debug\DotNet.Utilities.dll
 G:\DotNetUntities\DotNet.Utilities\obj\Debug\DotNet.Utilities.pdb
+G:\代码仓库\dotnetcodes\DotNet.Utilities\bin\Debug\DotNet.Utilities.dll
+G:\代码仓库\dotnetcodes\DotNet.Utilities\bin\Debug\DotNet.Utilities.pdb
+G:\代码仓库\dotnetcodes\DotNet.Utilities\bin\Debug\ThoughtWorks.QRCode.dll
+G:\代码仓库\dotnetcodes\DotNet.Utilities\obj\Debug\DotNet.Utilities.csprojResolveAssemblyReference.cache
+G:\代码仓库\dotnetcodes\DotNet.Utilities\obj\Debug\DotNet.Utilities.dll
+G:\代码仓库\dotnetcodes\DotNet.Utilities\obj\Debug\DotNet.Utilities.pdb
