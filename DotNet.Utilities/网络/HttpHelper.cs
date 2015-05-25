@@ -88,6 +88,40 @@ namespace DotNet.Utilities
                 return string.Empty;
             }
         }
+
+        /// <summary>
+        /// 模拟httpPost提交表单
+        /// </summary>
+        /// <param name="url">POS请求的网址</param>
+        /// <param name="data">表单里的参数和值</param>
+        /// <param name="encoder">页面编码</param>
+        /// <returns></returns>
+        public static string CreateAutoSubmitForm(string url, Dictionary<string, string> data, Encoding encoder)
+        {
+            StringBuilder html = new StringBuilder();
+            html.AppendLine("<html>");
+            html.AppendLine("<head>");
+            html.AppendFormat("<meta http-equiv=\"Content-Type\" content=\"text/html; charset={0}\" />", encoder.BodyName);
+            html.AppendLine("</head>");
+            html.AppendLine("<body onload=\"OnLoadSubmit();\">");
+            html.AppendFormat("<form id=\"pay_form\" action=\"{0}\" method=\"post\">", url);
+            foreach (KeyValuePair<string, string> kvp in data)
+            {
+                html.AppendFormat("<input type=\"hidden\" name=\"{0}\" id=\"{0}\" value=\"{1}\" />", kvp.Key, kvp.Value);
+            }
+            html.AppendLine("</form>");
+            html.AppendLine("<script type=\"text/javascript\">");
+            html.AppendLine("<!--");
+            html.AppendLine("function OnLoadSubmit()");
+            html.AppendLine("{");
+            html.AppendLine("document.getElementById(\"pay_form\").submit();");
+            html.AppendLine("}");
+            html.AppendLine("//-->");
+            html.AppendLine("</script>");
+            html.AppendLine("</body>");
+            html.AppendLine("</html>");
+            return html.ToString();
+        }
         #endregion
 
 
