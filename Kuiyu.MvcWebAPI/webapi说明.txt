@@ -1,0 +1,10 @@
+﻿/*
+ 源码己托管:http://git.oschina.net/kuiyu/dotnetcodes
+ * 作者：kuiyu
+ * QQ 79599287
+ */
+
+
+ 包含了webapi常用API功能代码
+  1.增加WebApi跨域支持
+  2.在MyFilter中得到传给WebApi的值
