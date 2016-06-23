@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Aliyun.OSS">
+      <HintPath>..\Pagkage\ali-oss\Aliyun.OSS.dll</HintPath>
+    </Reference>
     <Reference Include="Excel, Version=1.5.0.0, Culture=neutral">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -123,6 +126,7 @@
     <Compile Include="计划任务\IntervalTask.cs" />
     <Compile Include="计划任务\TimerInfo.cs" />
     <Compile Include="配置文件操作类\ConfigHelper.cs" />
+    <Compile Include="阿里云OSS\Storage.cs" />
     <Compile Include="随机数类\BaseRandom.cs" />
     <Compile Include="随机数类\RandomHelper.cs" />
     <Compile Include="随机数类\RandomOperate.cs" />
