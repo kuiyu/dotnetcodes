@@ -51,6 +51,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\itextsharp.dll</HintPath>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Pagkage\log4net\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Office.Interop.Owc11, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>False</EmbedInteropTypes>
@@ -80,6 +83,7 @@
     <Compile Include="Chart图形\Assistant.cs" />
     <Compile Include="Chart图形\OWCChart11.cs" />
     <Compile Include="异步线程\ManagedThreadPool.cs" />
+    <Compile Include="日志\Log.cs" />
     <Compile Include="网络\HttpHelper.cs" />
     <Compile Include="JSON操作\ConvertJson.cs" />
     <Compile Include="JS操作\JsHelper.cs" />
@@ -147,10 +151,13 @@
     <Content Include="FTP操作类\FTP使用说明.txt" />
     <Content Include="H5-微信\AutoPayMusic.html" />
     <Content Include="异步线程\线程使用说明.txt" />
+    <Content Include="日志\日志使用说明.txt" />
     <Content Include="网站安全\使用说明.txt" />
     <Content Include="计划任务\计划任务使用说明.txt" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="日志\log4net.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
