@@ -16,3 +16,7 @@
             log.Info("网站己启动......");
 
         }
+
+3.loghelper类
+  GetCurrentMethodFullName()方法调用时需要增加所在的命名空间
+  DotNet.Web.Framework.Log.GetCurrentMethodFullName()
